@@ -4,6 +4,7 @@ export interface User {
   id: number
   name: string
   email: string
+  age: number
 }
 
 export const getUsers = () => apiClient.get<User[]>('/users')
